@@ -9,7 +9,7 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({ title: "Code Splitting" }),
+    new HtmlWebpackPlugin({ title: "Lazy Loading" }),
   ],
   output: {
     filename: "[name].bundle.js",
