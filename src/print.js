@@ -1,7 +1,7 @@
 console.log(
-  "The print.js module has loaded! See the network tab in dev tools..."
+  "The print.js module has loaded!!!"
 );
 
-export default () => {
-  console.log('Updating print.js 2021...');
-};
+export default function print(text) {
+  console.log(text);
+}

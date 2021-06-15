@@ -5,10 +5,10 @@ function component() {
   let element = document.createElement("div");
   let button = document.createElement("button");
   let br = document.createElement("br");
-  button.innerHTML = "Click me and look at the console!";
+  button.innerHTML = "click me and look at the console!";
   element.appendChild(br);
   element.appendChild(button);
-  button.onclick = print;
+  button.onclick = print.bind(null,'Hello webpack');
   return element;
 }
 
