@@ -3,5 +3,5 @@ console.log(
 );
 
 export default () => {
-  console.log('Button Clicked: Here\'s "Hello"!');
+  console.log('Updating print.js 2021...');
 };
