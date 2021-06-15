@@ -9,7 +9,7 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({ title: "Output Management" }),
+    new HtmlWebpackPlugin({ title: "Code Splitting" }),
   ],
   output: {
     filename: "[name].bundle.js",
