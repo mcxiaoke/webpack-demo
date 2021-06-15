@@ -4,16 +4,21 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   mode: "development",
+  devtool: "inline-source-map",
+  devServer: {
+    contentBase: "./dist",
+  },
   entry: {
     app: "./src/index.js",
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({ title: "Lazy Loading" }),
+    new HtmlWebpackPlugin({ title: "Development" }),
   ],
   output: {
     filename: "[name].bundle.js",
     chunkFilename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
+    publicPath: '/'
   },
 };
